@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::namespace('Admin')->prefix('admin')->group(function () {
+    Route::resource('services','ServiceController');
+    Route::get('service/delete/{id}','ServiceController@delete')->name('services.delete');
+
+});
