@@ -20,3 +20,5 @@ Route::namespace('Admin')->prefix('admin')->group(function () {
     Route::get('service/delete/{id}','ServiceController@delete')->name('services.delete');
 
 });
+
+Route::get('service_parlor', 'FrontController@service_show')->name('parlor_service');

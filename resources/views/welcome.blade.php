@@ -1,99 +1,122 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+@extends('layouts.layout')
+@section('content')
+    <section class="banner py-5">
+        <div class="container pt-5 ">
+            <div class="row pt-5">
+                <div class="col-md-8">
+                    <h4 class="black-text pt-5 mt-5 ">Parlor Name Here</h4>
+                    <h2 class="h2 h2-responsive black-text heading py-4 font-weight-bold">OUR HAIR STYLES <br>
+                        ENHAGES YOUR SMILE    </h2>
+                    <a href="#" class="btn btn-sm btn-rounded">Contact Us</a>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <!-- <div class="col-md-4">
+                  <img src="img/hair-salon-png-hd-hairdressing-u0026-styling-services-hairdressing-hd-png-1295.png" class="img img-fluid">
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--services-->
+    <!--services-->
+    <section>
+        <div class="container my-5">
+            <h3 class="h3 h3-responsive ">Our Services</h3>
+            <!-- Grid row -->
+            <div class="row text-center my-5">
+            @foreach(@App\Service::take(10)->get() as $row)
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <!--Featured image-->
+                    <div class="view overlay rounded z-depth-1">
+                        <img src="{{ asset('../storage/app/service/'.$row->image)}}" class="img-fluid" alt="Sample project image" style="height: 220px;width: 100%;">
+                        <a>
+                            <div class="mask rgba-pink-slight"></div>
+                        </a>
+                    </div>
+                    <!--Excerpt-->
+                    <div class="card-body pb-0">
+                        <h4 class="font-weight-bold my-3">{{$row->name}}</h4>
+                        <p class="grey-text">{{$row->description}}
+                        </p>
+                        <a class="btn btn-rounded btn-sm"> View project</a>
+                    </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    <!--tag-->
+    <section class="bg">
+        <div class="container py-4 my-5">
+            <h3 class="h3 h3-responsive text-center white-text my-5">It doesn’t have to cost<br> A lot to look good.</h3>
+        </div>
+    </section>
+    <!--contactus-->
+    <section>
+        <div class="container my-5">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="card p-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="h3 h3-responsive">Contact Us :</h3>
+                                    <div class="md-form">
+                                        <input type="text" id="form-name" class="form-control">
+                                        <label for="form-name">Your name</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <input type="text" id="form-email" class="form-control">
+                                        <label for="form-email">Your email</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <input type="text" id="form-Subject" class="form-control">
+                                        <label for="form-Subject">Subject</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+                                        <label for="form-text">Send message</label>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn  btn-sm btn-rounded">Submit Now</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h3-responsive h3 pb-4">Address & Directions:</h3>
+                                    <div class="row pb-3 pt-2">
+                                        <div class="col-md-2 m-0 p-0 text-center">
+                                            <i class="fa fa-map-marker fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-10 m-0 p-0">
+                                            <p class="text-justify">D. No. 7, Nandanwan Classic, Pension Nagar, Nagpur, MH-440013</p>
+                                        </div>
+                                    </div>
+                                    <div class="row  pb-3">
+                                        <div class="col-md-2 m-0 p-0 text-center">
+                                            <i class="fa fa-phone fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-10 m-0 p-0">
+                                            <p class="text-justify">+91 9966887755</p>
+                                        </div>
+                                    </div>
+                                    <div class="row  pb-3">
+                                        <div class="col-md-2 m-0 p-0 text-center">
+                                            <i class="fa fa-envelope fa-2x"></i>
+                                        </div>
+                                        <div class="col-md-10 m-0 p-0">
+                                            <p class="text-justify">xyz.info@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238130.1187777879!2d78.93242227492463!3d21.16102819643248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C+Maharashtra%2C+India!5e0!3m2!1sen!2sua!4v1561888750513!5m2!1sen!2sua" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+    </section>
+
+
+@endsection
