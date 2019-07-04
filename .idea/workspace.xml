@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c773597-8ce0-4aed-93db-8325867342ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/svg/637580.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/A270192_IT-Cosmetics_ITs-Your-Top-5-Superstars-and-More-Nov-TSV-MAIN_W_Swatch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/facial.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/hair-salon-png-hd-hairdressing-u0026-styling-services-hairdressing-hd-png-1295.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/salon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/salonb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/services.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="29">
-              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -268,36 +275,7 @@
             <path>
               <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
               <item name="parlor" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parlor" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parlor" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parlor" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parlor" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parlor" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parlor" type="b2602c69:ProjectViewProjectNode" />
@@ -371,6 +349,7 @@
       <workItem from="1562048079994" duration="602000" />
       <workItem from="1562056603214" duration="5814000" />
       <workItem from="1562247974644" duration="876000" />
+      <workItem from="1562250316562" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="services crud functions">
       <created>1561892677547</created>
@@ -386,16 +365,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562248246631</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="css an js file">
+      <created>1562250520535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562250520535</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19621000" />
+    <option name="totallyTimeSpent" value="20244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -445,7 +432,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="services crud functions" />
     <MESSAGE value="layout,welcome page and services page set" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout,welcome page and services page set" />
+    <MESSAGE value="css an js file" />
+    <option name="LAST_COMMIT_MESSAGE" value="css an js file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/User.php">
@@ -712,7 +700,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>
