@@ -1,0 +1,43 @@
+.banner{
+  background-image: url("../svg/salon.png");
+  /*background: #fce7f6;*/
+  height: 600px;
+  background-size: cover;
+}
+/*.banner::after{
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 100%)!important;
+  margin-top: -250px;
+  height: 405px;
+  width: 100%;
+  content: '';
+}*/
+
+.heading{
+  font-size: 50px;
+  letter-spacing: 2px;
+
+
+}
+.nav-link{
+  /*color: #df0054!important;*/
+  color: #fff;
+  font-weight: bold;
+}
+.btn-rounded{
+  border-radius: 50px;
+  background: #df0054!important;
+  color: #fff!important;
+  }
+  .text-color{
+  color: #df0054!important;
+  }
+  .bg{
+    background: #df0054!important;
+  }
+  .service-banner{
+    background-image: url("../svg/services.png");
+    background-size: cover;
+    height: 400px;
+  }
