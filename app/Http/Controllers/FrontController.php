@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:customer');
+    }
     public function home()
     {
         $service=Service::all();
@@ -17,4 +21,5 @@ class FrontController extends Controller
         $services=Service::all();
         return view('service',compact('services'));
     }
+
 }

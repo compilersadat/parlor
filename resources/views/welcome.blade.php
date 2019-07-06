@@ -37,7 +37,7 @@
                         <h4 class="font-weight-bold my-3">{{$row->name}}</h4>
                         <p class="grey-text">{{$row->description}}
                         </p>
-                        <a class="btn btn-rounded btn-sm"> View project</a>
+                        <a href="{{ route('customer.orderform')}}" class="btn btn-rounded btn-sm">Order Now</a>
                     </div>
                 </div>
                 @endforeach
